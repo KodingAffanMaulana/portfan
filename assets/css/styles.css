@@ -223,12 +223,12 @@ img {
 
 .home__img {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  top: 20%;
+  right: 0%;
   border: 2px orange dashed;
-  width: 200px;
-  animation: animate 3s ease-in-out infinite;
-  transition: all 5s ease-in-out;
+  width: 100%;
+  animation: animate 5s ease-in-out infinite;
+  transition: all 2s ease-in-out;
 }
 
 /* button */
@@ -246,7 +246,7 @@ img {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== ABOUT =====*/
+/* ABOUT */
 .about__container {
   row-gap: 2rem;
   text-align: center;
@@ -589,13 +589,66 @@ img {
 }
 
 /*  MEDIA QUERIES */
-@media screen and (max-width: 320px) {
-  .home {
-    row-gap: 2rem;
+@media screen and (min-width: 320px) {
+  #container_home__img {
+    display: block;
   }
 
   .home__img {
-    width: 200px;
+    position: absolute;
+    top: 1px;
+  }
+
+  .home {
+    padding: 22rem 0 0 0;
+    text-align: center;
+  }
+
+  .home__title {
+    margin-bottom: 20px;
+  }
+
+  .home__social {
+    margin-top: -100px;
+    padding-top: 2rem;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .about-section {
+    margin-top: -80px;
+  }
+
+  .about__img {
+    display: none;
+  }
+
+  .cards-container {
+    display: block;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .card_work {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact__container {
+    margin-left: 0;
+  }
+
+  .contact__input {
+    width: 300px;
+  }
+
+  .about__text {
+    text-align: left;
   }
 }
 
@@ -616,9 +669,8 @@ img {
     margin-right: var(--mb-4);
   }
 
-  .home__img {
-    width: 300px;
-    bottom: 25%;
+  #container_home__img {
+    display: none;
   }
 
   .about__container {
@@ -729,9 +781,61 @@ img {
 
   .home {
     padding: 10rem 0 2rem;
+    text-align: left;
+  }
+
+  #container_home__img {
+    display: block;
   }
 
   .home__img {
-    width: 450px;
+    position: absolute;
+    top: 20%;
+    right: 0%;
+  }
+
+  .home__title {
+    margin-bottom: 40px;
+  }
+
+  .home__social {
+    margin-top: 20px;
+    gap: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+  }
+
+  .about-section {
+    margin-top: -30px;
+  }
+
+  .about__img {
+    display: block;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1%;
+  }
+
+  .card {
+    width: 23%;
+    margin-bottom: 10px;
+  }
+
+  .contact__container {
+    margin-left: -200px;
+  }
+
+  .contact__input {
+    width: 600px;
+  }
+
+  .card_work {
+    width: 45%;
+    max-width: 50%;
   }
 }
