@@ -110,7 +110,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  border-bottom: 2px dashed rgb(208, 208, 208);
 }
 
 /* Navbar */
